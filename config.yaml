@@ -1,0 +1,24 @@
+proxies:
+  - name: 🇯🇵 Railway-VLESS
+    type: vless
+    server: docker-ubuntu-desktop-production-5f38.up.railway.app
+    port: 443
+    uuid: af941770-ac86-48a3-8e3c-9aec8d7ea531
+    udp: true
+    tls: true
+    servername: docker-ubuntu-desktop-production-5f38.up.railway.app
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: docker-ubuntu-desktop-production-5f38.up.railway.app
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 🇯🇵 Railway-VLESS
+      - DIRECT
+
+rules:
+  - MATCH,🚀 节点选择
