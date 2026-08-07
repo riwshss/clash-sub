@@ -4,10 +4,10 @@ proxies:
     server: docker-ubuntu-desktop-production-5f38.up.railway.app
     port: 443
     uuid: af941770-ac86-48a3-8e3c-9aec8d7ea531
-    udp: true
     tls: true
-    servername: docker-ubuntu-desktop-production-5f38.up.railway.app
+    udp: true
     network: ws
+    servername: docker-ubuntu-desktop-production-5f38.up.railway.app
     ws-opts:
       path: /
       headers:
