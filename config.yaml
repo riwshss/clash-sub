@@ -1,5 +1,5 @@
 proxies:
-  - name: Railway-VLESS
+  - name: jp Railway-VLESS
     type: vless
     server: docker-ubuntu-desktop-production-5f38.up.railway.app
     port: 443
